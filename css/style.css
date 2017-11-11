@@ -1,0 +1,317 @@
+}@font-face {
+	font-family: 'Calibri';
+	src: url(../fonts/Calibri.ttf);
+}
+@font-face {
+	font-family: 'Bebas';
+	src: url(../fonts/BEBAS.ttf);
+}
+ol, li, ul {
+	margin: 0;
+	padding: 0;
+}
+button, 
+button:active, 
+button:focus {
+    outline: none;
+}
+body {
+	padding: 0;
+	margin: 0;
+	background: #FFF url(../img/bodyBackGround.png);
+}
+main {
+	margin: auto;
+	margin-top: 60px;
+	width: 1200px;
+	height: 600px;
+	border-radius: 20px;
+	background: #FFF url(../img/mainBackGround.png);
+	box-shadow: 3px 3px 66px -24px rgba(0,0,0,0.75);
+
+}
+.timer {
+	position: absolute;
+	display: block;
+	width: 120px;
+	height: 40px;
+	margin-right:  auto;
+	margin-left:  auto;
+    top: 0; left: 0; bottom: 0; right: 0;
+	font: bold 30px 'Calibri', sans-serif;
+	color: #525252;
+	margin-top: 10px;
+	text-align: center;
+	letter-spacing: 5px;
+	background: #FFF url(../img/mainBackGroundLittle.png);
+	border-radius: 10px;
+}
+.buttonNewGame {
+	display: none;
+	position: absolute;
+	top: 10px;
+	height: 40px;
+	width: 190px;
+	font: bold 30px/35px 'Calibri', sans-serif;
+	color: #525252;
+	border-radius: 10px;
+	border: none;
+	padding-bottom: 10px;
+	background: #FFF url(../img/mainBackGroundLittle.png);
+}
+section.description {
+	padding-top: 50px;
+}
+section.description p {
+	text-align: center;
+	font:bold 18px 'Calibri', sans-serif;
+}
+section.description p:nth-child(1)  {
+	margin-top: 0;
+	font: bold 55px 'Bebas', sans-serif;
+	color: #525252;
+}
+section.description p span {
+	position: relative;
+}
+section.description p:nth-child(1) span:nth-child(1) {
+	right: 20px;
+	bottom: 10px;
+}
+section.description p:nth-child(1) span:nth-child(2) {
+	bottom: -7px;
+}
+section.description p:nth-child(1) span:nth-child(3) {
+	left: 20px;
+	bottom: 5px;
+}
+section.description p:nth-child(2) {
+	font: bold 22px 'Bebas', sans-serif;
+}
+section.description p:nth-child(4) {
+	margin-bottom: 35px;
+}
+section.description p:nth-child(5) {
+	font-size: 16px;
+	margin-left: 30px;
+	text-align: left;
+}
+.description ol {
+	float: left;
+	margin-right: 15px;
+}
+.description ol li {
+	margin-left: 43px;
+	font:bold 16px/44px 'Calibri', sans-serif;
+}
+.description  button {
+	float: left;
+	display: inline-block;
+	background-color: #FFF;
+	width: 100px;
+	height: 150px;
+	margin-right: 14px;
+	border: none;
+	border-radius: 5px;
+	font:  15px 'Bebas', sans-serif;
+	letter-spacing: 0.75px;
+}
+.description button:nth-of-type(1) {
+	background: #FFF url("../img/icon1.png") center center no-repeat;
+	background-size: 80%;
+}
+
+.description button:nth-of-type(2) {
+	background: #FFF url("../img/icon2.png") center center no-repeat;
+	background-size: 80%;
+}
+.description button:nth-of-type(3) {
+	background: #FFF url("../img/icon3.png") center center no-repeat;
+	background-size: 80%;
+	margin-right: 28px;
+}
+.description button:nth-of-type(7) {
+	margin-right: 0;
+	background-color: #34ab00;
+	width: 100px;
+	height: 75px;
+	position: relative;
+	top: 75px;
+
+}
+.description span.choice {
+	display: inline-block;
+	float: left;
+	position: relative;
+	font: bold 16px 'Calibri', sans-serif;
+	bottom: 110px;
+	right: 700px;
+}
+.description span:nth-of-type(2).choice {
+	bottom: 130px;
+	right: 340px;
+}
+.shadowForSkin {
+	box-shadow: 0  0  23px 7px rgba(0,255,38,1);
+}
+.shadowForDiff {
+	box-shadow: 0  0  23px 7px rgba(255,213,0,1);
+}
+.skinbackground1 {
+	background: #FFF url('../img/icon1.png')  center center no-repeat;
+	background-size: 80%;
+}
+.skinbackground2 {
+	background: #FFF url('../img/icon2.png')  center center no-repeat;
+	background-size: 80%;
+}
+.skinbackground3 {
+	background: #FFF url('../img/icon3.png')  center center no-repeat;
+	background-size: 80%;
+}
+.front,
+.back {
+	width: 100%;
+	height: 265px;
+	backface-visibility: hidden;
+	position: relative;
+	top: 0;
+	left: 0;
+	box-shadow: 2px 2px 22px 2px rgba(0,0,0,0.75);
+	border-radius: 10px;
+}
+.back {
+	top: -265px;
+	transform: rotateY(180deg);
+}
+.front {
+	z-index: 2;
+
+}
+
+
+.frontCongratulations,
+.backCongratulations {
+	width: 100%;
+	height: 400px;
+	backface-visibility: hidden;
+	position: relative;
+	top: 0;
+	left: 0;
+	box-shadow: 2px 2px 22px 2px rgba(0,0,0,0.75);
+	border-radius: 10px;
+}
+.backCongratulations {
+	top: -400px;
+	transform: rotateY(180deg);
+	background-color: #FFF;
+	font: bold 55px/400px 'Bebas', sans-serif;
+	color: #ffd307;
+	text-align: center;
+
+}
+.frontCongratulations {
+	z-index: 2;
+	background: #FFF url("../img/like.png") center center  no-repeat;
+	background-size: 80%;
+}  
+
+.congratulationsCard {
+	
+	display: none;
+	/*display: inline-block; */
+    position: relative;
+	top: 100px;
+	left: 450px;
+	transition-delay: 0s;
+	opacity: 0;
+	perspective: 100px;
+	transform: rotateY(0deg);
+	transition: 1s;
+	transform-style: preserve-3d;
+	height: 400px;
+	width: 300px;
+
+
+}
+
+
+.fieldDifficulty2 .back, 
+.fieldDifficulty2 .front,
+.fieldDifficulty3 .back,
+.fieldDifficulty3 .front
+ {
+	height: 180px;
+}
+.fieldDifficulty2 .back,
+.fieldDifficulty3 .back {
+	top: -180px;
+}
+
+
+.fieldDifficulty1 {
+	width: 90%;
+	margin: auto;
+}
+.fieldDifficulty1 div.flipper,
+.fieldDifficulty2 div.flipper,
+.fieldDifficulty3 div.flipper {
+	visibility: visible;
+	transition-delay: 0s;
+	opacity: 1;
+	perspective: 100px;
+	transform: rotateY(0deg);
+	transition: 0.6s;
+	transform-style: preserve-3d;
+}
+.fieldDifficulty1 div.flipper {
+	margin: 0;
+	padding: 0;
+	height: 265px;
+	width: 18%;
+	float: left;
+	margin-right: 2.5%;
+	margin-top: 2%;
+}
+.fieldDifficulty1 div:nth-child(5n+5) {
+	margin-right: 0;
+}
+
+
+.fieldDifficulty2 {
+	width: 85%;
+	margin: auto;
+}
+.fieldDifficulty2 div.flipper {
+	margin: 0;
+	padding: 0;
+	height: 180px;
+	width: 12.5%;
+	float: left;
+	margin-right: 5%;
+	margin-top: 1.3%;
+}
+.fieldDifficulty2 div:nth-child(6n+6) {
+	margin-right: 0;
+}
+
+
+
+.fieldDifficulty3 {
+	width: 90%;
+	margin: auto;
+}
+.fieldDifficulty3 div.flipper {
+	margin: 0;
+	padding: 0;
+	height: 180px;
+	width: 11.61%;
+	float: left;
+	margin-right: 1%;
+	margin-top: 1.3%;
+
+}
+.fieldDifficulty3 div:nth-child(8n+8) {
+	margin-right: 0;
+}
+

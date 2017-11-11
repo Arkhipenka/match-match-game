@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Match Match Game</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="icon" href="img/titleBackGround.ico" type="image/x-icon">
+  </head>
+  <body>
+    <main id="main" class="main">
+      <p id="timer"></p>
+      <button  id="buttonNewGame" class="buttonNewGame" onclick="game.newGame()">New Game</button>
+      <section id="description" class="description">
+        <p><span>Match</span> <span>Match</span> <span>Game</span></p>
+        <p>How to play:</p>
+        <p>Memory is a counter game where the object is to find pairs.</p>
+        <p>When the game begins, all pictures are hidden.</p>
+        <p>To Play:</p>
+        <ol>
+          <li>Select two cards to try to match the pictures</li>
+          <li>If you match the pictures you can go again</li>
+          <li>If they don't match it is the computer turn them</li>
+          <li>The player that finds all pairs wins!</li>
+          <li>Have Fun!</li>
+        </ol>
+        <button id="skin1" onclick="game.settingSkirt(1)"></button>
+        <button id="skin2" onclick="game.settingSkirt(2)"></button>
+        <button id="skin3" onclick="game.settingSkirt(3)"></button>
+        <button id="diff1" onclick="game.settingDifficulty(1)">Low 5 x 2</button>
+        <button id="diff2" onclick="game.settingDifficulty(2)">Medium 6 x 3</button>
+        <button id="diff3" onclick="game.settingDifficulty(3)">Hight 8 x 3</button>
+        <button id="startButton" onclick="game.startGame()" disabled>Start</button>
+        <span class="choice">Skirt Cards:</span>
+        <span class="choice">Game Difficulty:</span>
+      </section>
+      <section id="congratulationsCard" class="congratulationsCard">
+          <div class="frontCongratulations"></div>
+          <div class="backCongratulations">
+            <span>You win!</span>
+          </div>
+      </section>  
+    </main> 
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
+</html>
