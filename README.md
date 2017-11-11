@@ -1,2 +1,2 @@
 # match-match-game
-Kireev/Vorobei
+mentor: Kireev/Vorobei
